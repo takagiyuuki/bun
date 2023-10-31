@@ -8,13 +8,13 @@ Learning for 🍞Bun
 
 Install
 
-```zsh
-➜  workspace git:(main) ✗ curl -fsSL https://bun.sh/install | zsh
+```bash
+➜  workspace git:(main) ✗ curl -fsSL https://bun.sh/install | bash
 ```
 
-vim ~/.zshrc
+vim ~/.bashrc
 
-```zsh
+```bash
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
@@ -22,14 +22,14 @@ export PATH=$BUN_INSTALL/bin:$PATH
 
 version up
 
-```zsh
+```bash
 ➜  workspace git:(main) ✗ bun upgrade
 Congrats! You're already on the latest version of bun (which is v1.0.7)upgrade
 ```
 
 Make project
 
-```zsh
+```bash
 ➜  workspace git:(main) ✗ bun init
 bun init helps you get started with a minimal project and tries to guess sensible defaults. Press ^C anytime to quit
 
@@ -46,19 +46,19 @@ To get started, run:
 
 develop command
 
-```zsh
+```bash
 bun --watch index.ts
 ```
 
 deploy command
 
-```zsh
+```bash
 bun run index.ts
 ```
 
 package install command
 
-```zsh
+```bash
 bun install package-name
 bun add package-name
 ```

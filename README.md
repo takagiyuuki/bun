@@ -65,5 +65,5 @@ bun add package-name
 
 References:
 
-https://bun.sh/
-https://reffect.co.jp/bun/bun-beginner/
+- https://bun.sh/
+- https://reffect.co.jp/bun/bun-beginner/

@@ -1,6 +1,6 @@
 # bun
 
-![Bun](./img/logo@4x.png)
+![Bun](./img/logo-square.jpg)
 
 Learning for 🍞Bun
 

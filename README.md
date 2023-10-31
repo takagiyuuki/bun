@@ -67,5 +67,3 @@ References:
 
 https://bun.sh/
 https://reffect.co.jp/bun/bun-beginner/
-
-SiBun

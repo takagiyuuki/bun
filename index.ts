@@ -1,18 +1,14 @@
-const server = Bun.serve({
-  port: 3000,
-  fetch(request) {
-    const url = new URL(request.url);
-    if (url.pathname === "/") return new Response("Home page!");
-    if (url.pathname === "/blog") throw new Error("woops!");
-    return new Response("404");
-  },
-  error(error) {
-    return new Response(`<pre>${error}\n${error.stack}</pre>`, {
-      headers: {
-        "Content-Type": "text/html",
-      },
-    });
-  },
-});
+import { Database } from "bun:sqlite";
 
-console.log(`Listening on localhost: ${server.port}`);
+const db = new Database("mydb.sqlite", { create: true });
+
+db.run(
+  `CREATE TABLE IF NOT EXISTS users (id Integer Primary Key Autoincrement, name Text, email Text Unique)`,
+);
+
+const insertUser = db.prepare("INSERT INTO users (name, email) VALUES (?, ?)");
+insertUser.run("John Doe", "john@example.com");
+
+const getUsers = db.prepare("SELECT * from users");
+
+console.log(getUsers.all());

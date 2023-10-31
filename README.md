@@ -1,4 +1,7 @@
 # bun
+
+![Bun](./img/logo@4x.png)
+
 Learning for 🍞Bun
 
 Install
@@ -57,9 +60,6 @@ package install command
 bun install package-name
 bun add package-name
 ```
-
-
-
 
 References:
 

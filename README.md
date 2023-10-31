@@ -1,6 +1,8 @@
 # bun
 
-![Bun](./img/logo-square.jpg)
+<p align="center">
+    <img alt="Bun" src="./img/logo-square.jpg" width="100" />
+</p>
 
 Learning for 🍞Bun
 
